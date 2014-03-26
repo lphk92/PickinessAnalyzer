@@ -6,28 +6,39 @@
     </head>
 
     <body>
-        <div class="food">
-            <label for="green_beans">Green Beans</label>
-            <span>Like</span>
-            <input name="green_beans" type="range" min="1" max="5">
-            <span>Dislike</span>
+        <div id="test">
+            <!--
+            <div class="food">
+                <label for="green_beans">Green Beans</label>
+                <span>Dislike</span>
+                <input name="green_beans" type="range" min="1" max="5">
+                <span>Like</span>
+            </div>
+
+            <div class="food">
+                <label for="potatoes">Potatoes</label>
+                <span>Dislike</span>
+                <input name="potatoes" type="range" min="1" max="5">
+                <span>Like</span>
+            </div>
+
+            <div class="food">
+                <label for="turkey">Turkey</label>
+                <span>Dislike</span>
+                <input name="turkey" type="range" min="1" max="5">
+                <span>Like</span>
+            </div>
+
+            <input type="submit" id="submit">
+            -->
         </div>
 
-        <div class="food">
-            <label for="potatoes">Potatoes</label>
-            <span>Like</span>
-            <input name="potatoes" type="range" min="1" max="5">
-            <span>Dislike</span>
+        <div id="results">
+            <canvas id="chart" width="500" height="500"></canvas>
+            <p id="resultText"></p>
         </div>
-
-        <div class="food">
-            <label for="turkey">Turkey</label>
-            <span>Like</span>
-            <input name="turkey" type="range" min="1" max="5">
-            <span>Dislike</span>
-        </div>
-
-        <input type="submit" id="submit">
     </body>
+    <script src="Chart.js"></script>
     <script src="index.js"></script>
+    <script src="data.js"></script>
 </html>

@@ -4,6 +4,18 @@ body
     padding: 20px;
 }
 
+div#test
+{
+    float: left;
+}
+
+div#results
+{
+    position: fixed; 
+    top: 20px;
+    left: 350px;
+}
+
 div.food
 {
     border: 1px solid black;
