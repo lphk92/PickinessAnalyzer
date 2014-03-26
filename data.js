@@ -1,9 +1,15 @@
-var submit = document.getElementById("submit");
-submit.onclick = processData;
+var inputs = document.getElementsByTagName("input");
+for (var i = 0 ; i < inputs.length ; i++)
+{
+    var element = inputs[i];
+    if (element.type == "range")
+    {
+        element.onchange = processData;
+    }
+}
 
 function processData()
 {
-
     // Initialze the historgram bins to 0
     var bins = [];
     for (var i = 0 ; i < maxValue ; i++)
@@ -12,7 +18,6 @@ function processData()
     var names = []
     var values = [];
     var sum = 0;
-    var inputs = document.getElementsByTagName("input");
     for (var i = 0 ; i < inputs.length ; i++)
     {
         var element = inputs[i];
@@ -44,6 +49,6 @@ function processData()
 
     var chart = new Chart(context).Bar(data);
     var average = sum/values.length;
-    document.getElementById("resultText").innerHTML += 
+    document.getElementById("resultText").innerHTML = 
         "Your average pickiness score is " + average;
 }

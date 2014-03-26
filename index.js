@@ -60,8 +60,6 @@ for (var i = 0 ; i < foods.length ; i++)
     test.innerHTML += "<div class=\"food\"><label for=\"" +
                         noSpace + "\">" + curr + "</label>" +
                         "<span>Dislike</span><input name=\"" + noSpace +
-                        "\" type=\"range\" min=\"1\" max=\"" + maxValue + "\">" +
-                        "<span>Like</span></div>";
+                        "\" type=\"range\" min=\"1\" max=\"" + maxValue + 
+                        "\">" + "<span>Like</span></div>";
 }
-
-test.innerHTML += "<input type=\"submit\" id=\"submit\">";
